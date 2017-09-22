@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC06A21A1F74E73600943340 /* rete.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC06A2191F74E73600943340 /* rete.plist */; };
 		EC6E38461F727CCF00CE98B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E38451F727CCF00CE98B9 /* AppDelegate.swift */; };
 		EC6E38481F727CCF00CE98B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E38471F727CCF00CE98B9 /* ViewController.swift */; };
 		EC6E384A1F727CCF00CE98B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6E38491F727CCF00CE98B9 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC06A2191F74E73600943340 /* rete.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = rete.plist; sourceTree = "<group>"; };
 		EC6E38421F727CCF00CE98B9 /* MOBI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOBI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6E38451F727CCF00CE98B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6E38471F727CCF00CE98B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				EC6E384E1F727CCF00CE98B9 /* Info.plist */,
 				EC6E38641F72D1EA00CE98B9 /* nodi.plist */,
 				EC875C711F73969900238810 /* Mobi.swift */,
+				EC06A2191F74E73600943340 /* rete.plist */,
 			);
 			path = MOBI;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC06A21A1F74E73600943340 /* rete.plist in Resources */,
 				EC6E384A1F727CCF00CE98B9 /* Assets.xcassets in Resources */,
 				EC6E38651F72D1EA00CE98B9 /* nodi.plist in Resources */,
 				EC6E384D1F727CCF00CE98B9 /* Main.storyboard in Resources */,
