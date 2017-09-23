@@ -68,11 +68,11 @@
 				EC6E38451F727CCF00CE98B9 /* AppDelegate.swift */,
 				EC6E38471F727CCF00CE98B9 /* ViewController.swift */,
 				EC6E38491F727CCF00CE98B9 /* Assets.xcassets */,
+				EC06A2191F74E73600943340 /* rete.plist */,
 				EC6E384B1F727CCF00CE98B9 /* Main.storyboard */,
 				EC6E384E1F727CCF00CE98B9 /* Info.plist */,
 				EC6E38641F72D1EA00CE98B9 /* nodi.plist */,
 				EC875C711F73969900238810 /* Mobi.swift */,
-				EC06A2191F74E73600943340 /* rete.plist */,
 			);
 			path = MOBI;
 			sourceTree = "<group>";
