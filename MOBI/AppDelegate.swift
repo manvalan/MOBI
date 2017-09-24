@@ -11,9 +11,11 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    static var mobiData :MobiData = MobiData()
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        
+        //AppDelegate.mobiData.ReadInfrastruttura()
         
     }
 

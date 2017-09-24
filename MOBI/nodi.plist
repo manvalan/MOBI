@@ -52,7 +52,7 @@
 		<key>track</key>
 		<integer>6</integer>
 		<key>type</key>
-		<integer>5</integer>
+		<integer>4</integer>
 		<key>x</key>
 		<integer>4</integer>
 		<key>y</key>
@@ -140,7 +140,7 @@
 		<key>x</key>
 		<integer>6</integer>
 		<key>y</key>
-		<integer>6</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>id</key>

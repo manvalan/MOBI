@@ -16,6 +16,8 @@
 		EC6E38601F7282BE00CE98B9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6E385F1F7282BE00CE98B9 /* libsqlite3.0.tbd */; };
 		EC6E38651F72D1EA00CE98B9 /* nodi.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6E38641F72D1EA00CE98B9 /* nodi.plist */; };
 		EC875C721F73969900238810 /* Mobi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC875C711F73969900238810 /* Mobi.swift */; };
+		ECE5EE3F1F763F830063DA59 /* MobiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5EE3E1F763F830063DA59 /* MobiData.swift */; };
+		ECE5EE411F7799F90063DA59 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5EE401F7799F90063DA59 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EC6E385F1F7282BE00CE98B9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		EC6E38641F72D1EA00CE98B9 /* nodi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nodi.plist; sourceTree = "<group>"; };
 		EC875C711F73969900238810 /* Mobi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobi.swift; sourceTree = "<group>"; };
+		ECE5EE3E1F763F830063DA59 /* MobiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiData.swift; sourceTree = "<group>"; };
+		ECE5EE401F7799F90063DA59 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				EC6E384E1F727CCF00CE98B9 /* Info.plist */,
 				EC6E38641F72D1EA00CE98B9 /* nodi.plist */,
 				EC875C711F73969900238810 /* Mobi.swift */,
+				ECE5EE3E1F763F830063DA59 /* MobiData.swift */,
+				ECE5EE401F7799F90063DA59 /* GraphView.swift */,
 			);
 			path = MOBI;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE5EE411F7799F90063DA59 /* GraphView.swift in Sources */,
 				EC6E38481F727CCF00CE98B9 /* ViewController.swift in Sources */,
 				EC6E38461F727CCF00CE98B9 /* AppDelegate.swift in Sources */,
+				ECE5EE3F1F763F830063DA59 /* MobiData.swift in Sources */,
 				EC875C721F73969900238810 /* Mobi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
