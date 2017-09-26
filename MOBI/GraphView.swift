@@ -19,10 +19,10 @@ class GraphView: NSView {
     let NodoTipo4   = 4             // Stazione principale
     let NodoTipo5   = 5             // Stazione di testa
 
-    var maxHor : Int = 0
-    var minHor : Int = 0
-    var maxVer : Int = 0
-    var minVer : Int = 0
+    var maxHor : Float = 0
+    var minHor : Float = 0
+    var maxVer : Float = 0
+    var minVer : Float = 0
     var wx     : CGFloat = 0.0
     var wy     : CGFloat = 0.0
     var px     : CGFloat = 0.0
@@ -45,12 +45,12 @@ class GraphView: NSView {
     
     override func prepareForInterfaceBuilder() {
         var idNodo = AppDelegate.mobiData.NodiDict[0]
-        maxHor = idNodo["x"] as! Int
-        minHor = idNodo["x"] as! Int
+        maxHor = idNodo["x"] as! Float
+        minHor = idNodo["x"] as! Float
         
         for idNodo in AppDelegate.mobiData.NodiDict {
-            var nodoXVal : Int = idNodo["x"] as! Int
-            var nodoYVal : Int = idNodo["y"] as! Int
+            var nodoXVal : Float = idNodo["x"] as! Float
+            var nodoYVal : Float = idNodo["y"] as! Float
             
             maxHor = ( maxHor > nodoXVal ) ? maxHor : nodoXVal
             minHor = ( minHor < nodoXVal ) ? minHor : nodoXVal

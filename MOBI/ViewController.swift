@@ -96,15 +96,15 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             if (viewForTableColumn?.identifier.rawValue == "XColonna") {
                 var cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "XCell"), owner: self) as! NSTableCellView
                 var idNodo = mobiData.NodiDict[row]
-                var idNodoVal = idNodo["x"] as! Int
-                cell.textField!.stringValue = String( format:"%2i", idNodoVal )
+                var idNodoVal = idNodo["x"] as! Float
+                cell.textField!.stringValue = String( format:"%.2f", idNodoVal )
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "YColonna") {
                 var cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "YCell"), owner: self) as! NSTableCellView
                 var idNodo = mobiData.NodiDict[row]
-                var idNodoVal = idNodo["y"] as! Int
-                cell.textField!.stringValue = String( format:"%2i", idNodoVal )
+                var idNodoVal = idNodo["y"] as! Float
+                cell.textField!.stringValue = String( format:"%.2f", idNodoVal )
                 return cell;
             }
         }
