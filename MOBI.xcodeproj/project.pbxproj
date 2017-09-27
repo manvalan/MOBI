@@ -18,6 +18,7 @@
 		EC875C721F73969900238810 /* Mobi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC875C711F73969900238810 /* Mobi.swift */; };
 		ECE5EE3F1F763F830063DA59 /* MobiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5EE3E1F763F830063DA59 /* MobiData.swift */; };
 		ECE5EE411F7799F90063DA59 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5EE401F7799F90063DA59 /* GraphView.swift */; };
+		ECEF94361F7BDC6700153EB8 /* TableSqlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF94351F7BDC6700153EB8 /* TableSqlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EC875C711F73969900238810 /* Mobi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobi.swift; sourceTree = "<group>"; };
 		ECE5EE3E1F763F830063DA59 /* MobiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiData.swift; sourceTree = "<group>"; };
 		ECE5EE401F7799F90063DA59 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		ECEF94351F7BDC6700153EB8 /* TableSqlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSqlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				EC875C711F73969900238810 /* Mobi.swift */,
 				ECE5EE3E1F763F830063DA59 /* MobiData.swift */,
 				ECE5EE401F7799F90063DA59 /* GraphView.swift */,
+				ECEF94351F7BDC6700153EB8 /* TableSqlViewController.swift */,
 			);
 			path = MOBI;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				ECE5EE411F7799F90063DA59 /* GraphView.swift in Sources */,
 				EC6E38481F727CCF00CE98B9 /* ViewController.swift in Sources */,
+				ECEF94361F7BDC6700153EB8 /* TableSqlViewController.swift in Sources */,
 				EC6E38461F727CCF00CE98B9 /* AppDelegate.swift in Sources */,
 				ECE5EE3F1F763F830063DA59 /* MobiData.swift in Sources */,
 				EC875C721F73969900238810 /* Mobi.swift in Sources */,

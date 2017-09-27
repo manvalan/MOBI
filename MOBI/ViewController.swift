@@ -62,7 +62,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
         let cell = ( tableView.identifier?.rawValue == "NodiTable"  ) ? tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "IDCell"), owner: self) as! NSTableCellView : tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ReteIDCell"), owner: self) as! NSTableCellView
         
-        
         if( tableView.identifier?.rawValue == "NodiTable" ) {
             let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "IDCell"), owner: self) as! NSTableCellView
             
@@ -71,12 +70,14 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idNodo = mobiData.NodiDict[row]
                 let idNodoVal = idNodo["id"] as! Int
                 cell.textField!.stringValue = String( format:"%2i", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "LabelColonna") {
                 var cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "LabelCell"), owner: self) as! NSTableCellView
                 var idNodo = mobiData.NodiDict[row]
                 cell.textField!.stringValue = idNodo["label"] as! String
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "TipoColonna") {
@@ -84,6 +85,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idNodo = mobiData.NodiDict[row]
                 var nodoTipo = idNodo["type"] as! Int
                 cell.textField!.stringValue = mobiData.TipoNodo[ nodoTipo ]
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "TrackColonna") {
@@ -91,6 +93,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idNodo = mobiData.NodiDict[row]
                 var idNodoVal = idNodo["track"] as! Int
                 cell.textField!.stringValue = String( format:"%2i", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "XColonna") {
@@ -98,6 +101,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idNodo = mobiData.NodiDict[row]
                 var idNodoVal = idNodo["x"] as! Float
                 cell.textField!.stringValue = String( format:"%.2f", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "YColonna") {
@@ -105,6 +109,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idNodo = mobiData.NodiDict[row]
                 var idNodoVal = idNodo["y"] as! Float
                 cell.textField!.stringValue = String( format:"%.2f", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
         }
@@ -116,18 +121,21 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idRete = mobiData.ReteDict[row]
                 let idReteVal = idRete["id"] as! Int
                 cell.textField!.stringValue = String( format:"%2i", idReteVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "ReteStartColonna") {
                 var cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ReteStartCell"), owner: self) as! NSTableCellView
                 var idRete = mobiData.ReteDict[row]
                 cell.textField!.stringValue = idRete["start"] as! String
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "ReteEndColonna") {
                 var cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ReteEndCell"), owner: self) as! NSTableCellView
                 var idRete = mobiData.ReteDict[row]
                 cell.textField!.stringValue = idRete["end"] as! String
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "ReteLenghtColonna") {
@@ -135,6 +143,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idRete = mobiData.ReteDict[row]
                 var idNodoVal = idRete["lenght"] as! Double
                 cell.textField!.stringValue = String( format:"%.3f", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             if (viewForTableColumn?.identifier.rawValue == "ReteTypeColonna") {
@@ -142,6 +151,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
                 var idRete = mobiData.ReteDict[row]
                 var idNodoVal = idRete["type"] as! Int
                 cell.textField!.stringValue = String( format:"%2i", idNodoVal )
+                cell.textField?.isEditable = true
                 return cell;
             }
             return cell
